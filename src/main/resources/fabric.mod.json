@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "crazy_concoctions",
+	"version": "${version}",
+	"name": "Crazy Concoctions",
+	"description": "Enter the wacky world of Crazy Concoctions, where you can create crazy and unpredictable potion abominations!",
+	"authors": [
+		"DaCommander31"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/crazy_concoctions/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.dacommander31.crazy_concoctions.CrazyConcoctions"
+		],
+		"fabric-datagen": [
+			"net.dacommander31.crazy_concoctions.CrazyConcoctionsDataGenerator"
+		],
+		"client": [
+			"net.dacommander31.crazy_concoctions.CrazyConcoctionsClient"
+		]
+	},
+	"mixins": [
+		"crazy_concoctions.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
